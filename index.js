@@ -29,4 +29,18 @@ const months = {
     December: 31
 };
 
+// let monthyIncome = function () {
+//     console.log("Your income for " + Object.keys(months));
+// };
+// monthyIncome()
+
+// for (let key of Object.keys(months)) {
+//     console.log("Your income for " + key + " is" + monthyIncome);
+// }
+
+for (const [key, value] of Object.entries(months)) {
+    display = `${key}`, `${value}`
+    console.log(`${key}`, `${value}`);
+}
+
 
