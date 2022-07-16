@@ -32,3 +32,107 @@
     font-weight: bold;
 }
 
+.login-input button{
+    width: 90%;
+    margin-top: 5vh;
+   }
+   
+   .login-input a{
+    text-align: center;
+    width: 90%;
+    margin-bottom: 5vh;
+    margin-left: 24vh;
+   
+   }
+   
+   .login-input input{
+    width: 90%;
+   
+   }
+   
+   .login-input label{
+    width: 100%;
+    color: blue;
+    font-weight: bold;
+   }
+   
+   .login-input{
+    display: flex;
+    height: auto;
+    flex-direction: column;
+   }
+   .sideNav{
+    background-color: #e3f2fd;
+    height: 94vh;
+    width: 20%;
+    padding-top: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+   }
+   
+   
+   .profilePlaceholder{
+    background-color: black;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+   }
+   
+   
+   .profileDataCont{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+   }
+   
+   .userNams h6{
+    margin: 0;
+    padding: 0;
+   }
+   
+   .userNams p{
+    margin: 0;
+    padding: 0;
+   }
+   
+   
+   .userNams{
+    margin-left: 10px;
+   }
+   
+   
+   .mainNav{
+    display: flex;
+    justify-content: space-between;
+   }
+   
+   .logo{
+    height: 40px;
+   }
+   
+   .homeSec{
+    display: flex;
+   }
+   
+   .mainContSection{
+    height: 94vh;
+    width: 80%;
+    padding: 50px;
+   }
+   
+   
+   .theSnippets{
+    height: 150px;
+    width: 290px;
+    border-radius: 10px;
+    float: left;
+    margin-right: 10px;
+    padding: 20px;
+   }
+   
+   
+   .myChart{
+    height: 30vh;
+   }  
+
