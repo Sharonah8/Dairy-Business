@@ -77,6 +77,113 @@
       </div>
     </nav>
 
+    <section class="homeSec">
+      <!-- SideNav -->
+      <div class="sideNav">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="dashboard.html"
+              ><i class="bi bi-speedometer"></i> Dashboard</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="vendors.html"
+              ><i class="bi bi-bicycle"></i> Vendors</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="inventory.html"
+              ><i class="bi bi-card-checklist"></i> Inventory</a
+            >
+          </li>
+        </ul>
+        <br />
+        <p>Finance</p>
+        <br />
+
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="income.html"
+              ><i class="bi bi-wallet"></i> Income</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="expenses.html"
+              ><i class="bi bi-currency-dollar"></i> Expenses</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="expenses.html"
+              ><i class="bi bi-card-bank"></i> Recurrent Bills</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="finance-settings.html"
+              ><i class="bi bi-gear-fill"></i> Settings</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="fin-reports.html"
+              ><i class="bi bi-file-spreadsheets"></i> Reports</a
+            >
+          </li>
+        </ul>
+
+        <hr />
+        <p>Human Resource</p>
+        <hr />
+
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="employees.html">
+              <i class="bi bi-person-badge-fill"></i> Employees</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="leave-mngt.html">
+              <i class="bi bi-easel-fill"></i> Leave Management</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="hr-settings.html"
+              ><i class="bi bi-sliders"></i> Settings</a
+            >
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="hr-reports.html">
+              <i class="bi bi-clipboard2-data-fill"></i> Reports</a
+            >
+          </li>
+        </ul>
+      </div>
+      <!-- SideNav -->
+
+      <!-- TrendsReports -->
+      <div class="mainConteSection">
+        <h3>Dashboard</h3>
+
+        <div class="theSnippets bg-warning">
+          <h5>Total Income Today</h5>
+          <h4 id="todaysIncome">0</h4>
+        </div>
+        <div class="theSnippets bg-success text-white">
+          <h5>Total Income this Month</h5>
+          <h4 id="">0</h4>
+        </div>
+        <div class="theSnippets bg-warning">
+          <h5>Total Expense Today</h5>
+          <h4 id="todaysExpense">0</h4>
+        </div>
+        <div class="theSnippets bg-success text-white">
+          <h5>Total Expense this Month</h5>
+          <h4 id="todaysExpense">0</h4>
+        </div>
+
+        <canvas id="myChart" class="myChart"></canvas>
+      </div>
+    </section>
+
     <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-analytics.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-firestore.js"></script>
