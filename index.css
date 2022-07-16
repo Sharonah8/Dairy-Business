@@ -5,6 +5,42 @@
     background-color: white;
 }
 
+p{
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+.bi{
+    font-size: xx-large;
+    font-weight: bold;
+    margin-bottom: 30vh;
+}
+
+.container-fluid{
+    background-color: lightblue;
+    height: 10vh;
+}
+.container-fluid img{
+    height: 11vh;
+    width: 13vh;
+}
+/* .navbar{
+    background-color: lightblue;
+}
+button{
+    background-color: lightblue;
+}
+.navbar-toggler-icon{
+    background-color: lightblue;
+}
+#navbarTogglerDemo01{
+    background-color: lightblue;
+}
+#navbarTogglerDemo01.img{
+    background-color: lightblue;
+} */
+
+
 .main-sec{
     width: 100%;
     height: 100vh;
