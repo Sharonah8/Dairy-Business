@@ -12,7 +12,7 @@ let time = 7;
 // let userInputD = 0
 
 const formA = document.getElementById("formA")
-formA.addEventListener("submit", (event) => { e.preventDefault() })
+formA.addEventListener("submit", () => { promptMeA })
 
 let userInputA = document.getElementById("fname").value
 let userInputB = document.getElementById("fname1").value
