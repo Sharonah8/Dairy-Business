@@ -3,41 +3,71 @@
 // let shedC = 486;
 // let shedD = 572;
 // let totalProduction = shedA + shedB + shedC + shedD;
+let totalProduction = 0
 let selling_price = totalProduction * 45;
 let time = 7;
-var userInputA = 0
-var userInputB = 0
-var userInputC = 0
-var userInputD = 0
-var totalProduction = 0
+// let userInputA = 0
+// let userInputB = 0
+// let userInputC = 0
+// let userInputD = 0
 
+let userInputA = document.getElementById("fname").value
+let userInputB = document.getElementById("fname1").value
+let userInputC = document.getElementById("fname2").value;
+let userInputD = document.getElementById("fname3").value;
 
-console.log(totalProduction);
+console.log(userInputA.trim(), 'inputA')
+function promptMeA(event) {
+    let inputA = document.getElementById("fname").value
+    console.log(inputA, 'input')
 
-function promptMeA() {
-    var userInputA = document.getElementById("fname").value;
-    console.log(userInputA)
     alert("Your production for shed A is" + " " + userInputA + " litres per day");
+
+
+
 };
-function promptMeB() {
-    var userInputB = document.getElementById("fname1").value;
+
+
+function promptMeB(e) {
+
+
     console.log(userInputB)
     alert("Your production for shed B is" + " " + userInputB + " litres per day");
+
+    return userInputB
+
 };
-function promptMeC() {
-    var userInputC = document.getElementById("fname2").value;
+function promptMeC(e) {
+
+
+
     console.log(userInputC)
     alert("Your production for shed C is" + " " + userInputC + " litres per day");
+    return userInputC
+
 };
-function promptMeD() {
-    var userInputD = document.getElementById("fname3").value;
+function promptMeD(e) {
+
+
     console.log(userInputD)
     alert("Your production for shed D is" + " " + userInputD + " litres per day");
+    return userInputD
+
+
 };
-function promptMeTotal() {
-    totalProduction = userInputA + userInputB + userInputC + userInputD;
-    alert("The total production is" + " " + totalProduction + " litres per day");
+
+function promptMeTotal(a, b) {
+
+
+    console.log(userInputA + userInputB, 'prod')
+    totalProduction = parseInt(userInputA) + userInputB + userInputC + userInputD;
+    console.log(totalProduction);
+    //alert("The total production is " + totalProduction + " litres per day");
+    return totalProduction
 };
+
+//promptMeTotal(promptMeA())
+
 
 
 
@@ -47,6 +77,7 @@ var incomeOverTime = function () {
 }
 // incomeOverTime(selling_price, time);
 
+//const elem = document.getElementById('outputB').innerHTML = "Your production for shed D is" + " " + promptMeB() + " litres per day"
 const months = {
     January: 31,
     February: 29,

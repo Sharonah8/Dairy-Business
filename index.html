@@ -174,39 +174,41 @@
         <h3>Dashboard</h3>
 
         <div class="theSnippets">
-          <form action="">
+          <form action="" onSubmit="promptMeA()">
             <h5 id="shed">Shed A</h5>
             <label for="fname">Milk Amount (ltrs):</label>
             <input type="text" id="fname" name="fname" /><br /><br />
-            <button onclick="promptMeA()">Submit</button>
+            <button>Submit</button>
           </form>
         </div>
         <div class="theSnippets">
-          <form action="">
+          <form action="" onSubmit="promptMeB()">
             <h5 id="shed">Shed B</h5>
+
             <label for="fname1">Milk Amount (ltrs):</label>
             <input type="text" id="fname1" name="fname" /><br /><br />
-            <button onclick="promptMeB()">Submit</button>
+
+            <button>Submit</button>
           </form>
         </div>
         <div class="theSnippets">
-          <form action="">
+          <form action="" onSubmit="promptMeC()">
             <h5 id="shed">Shed C</h5>
             <label for="fname">Milk Amount (ltrs):</label>
             <input type="text" id="fname2" name="fname" /><br /><br />
-            <button onclick="promptMeC()">Submit</button>
+            <button>Submit</button>
           </form>
         </div>
         <div class="theSnippets">
-          <form action="">
+          <form action="" onSubmit="promptMeD()">
             <h5 id="shed">Shed D</h5>
             <label for="fname">Milk Amount (ltrs):</label>
             <input type="text" id="fname3" name="fname" /><br /><br />
-            <button onclick="promptMeD()">Submit</button>
+            <button>Submit</button>
           </form>
         </div>
 
-        <button type="button" id="myTotalBtn" onclick="promptMeTotal()">
+        <button type="button" onclick="promptMeTotal()">
           Total Daily Production
         </button>
 
@@ -218,12 +220,6 @@
       </div>
     </section>
 
-    <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-analytics.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-firestore.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-auth.js"></script>
-    <script src="/js/config.js"></script>
-    <script src="/js/dashboard.js"></script>
     <script src="index.js"></script>
   </body>
 </html>
