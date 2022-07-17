@@ -1,46 +1,51 @@
-let shedA = document.getElementById("myBtnA");
-let shedB = 308;
-let shedC = 486;
-let shedD = 572;
-let totalProduction = shedA + shedB + shedC + shedD;
+// let shedA = document.getElementById("myBtnA");
+// let shedB = 308;
+// let shedC = 486;
+// let shedD = 572;
+// let totalProduction = shedA + shedB + shedC + shedD;
 let selling_price = totalProduction * 45;
 let time = 7;
 var userInputA = 0
 var userInputB = 0
 var userInputC = 0
 var userInputD = 0
+var totalProduction = 0
 
 
 console.log(totalProduction);
 
 function promptMeA() {
     userInputA = parseInt(prompt("Please provide amount of milk in litres"));
-    alert("Your production for shed A is" + " " + userInputA + " litres");
+    alert("Your production for shed A is" + " " + userInputA + " litres per day");
 };
 function promptMeB() {
     userInputB = parseInt(prompt("Please provide amount of milk in litres"));
-    alert("Your production for shed B is" + " " + userInputB + " litres");
+    alert("Your production for shed B is" + " " + userInputB + " litres per day");
 };
 function promptMeC() {
     userInputC = parseInt(prompt("Please provide amount of milk in litres"));
-    alert("Your production for shed C is" + " " + userInputC + " litres");
+    alert("Your production for shed C is" + " " + userInputC + " litres per day");
 };
 function promptMeD() {
     userInputD = parseInt(prompt("Please provide amount of milk in litres"));
-    alert("Your production for shed D is" + " " + userInputD + " litres");
+    alert("Your production for shed D is" + " " + userInputD + " litres per day");
 };
 function promptMeTotal() {
-    var totalProduction = userInputA + userInputB + userInputC + userInputD;
-    alert("The total production is" + " " + totalProduction + " litres");
+    totalProduction = userInputA + userInputB + userInputC + userInputD;
+    alert("The total production is" + " " + totalProduction + " litres per day");
 };
 
+// function incomeOverTime() {
+//     var weeklyIncome = 
+// }
 
 
-var incomeOverTime = function (selling_price, time) {
-    console.log("Your weekly income is Ksh. " + (selling_price * time));
-    console.log("Your yearly income is Ksh. " + (selling_price * (time * 52)));
+
+var incomeOverTime = function () {
+    alert("Your weekly income is Ksh. " + parseInt(totalProduction * 45 * 7));
+    // console.log("Your yearly income is Ksh. " + (selling_price * (time * 52)));
 }
-incomeOverTime(selling_price, time);
+// incomeOverTime(selling_price, time);
 
 const months = {
     January: 31,
