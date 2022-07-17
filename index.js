@@ -5,24 +5,33 @@ let shedD = 572;
 let totalProduction = shedA + shedB + shedC + shedD;
 let selling_price = totalProduction * 45;
 let time = 7;
+var userInputA = 0
+var userInputB = 0
+var userInputC = 0
+var userInputD = 0
+
 
 console.log(totalProduction);
 
 function promptMeA() {
-    var userInput = prompt("Please provide amount of milk in litres");
-    alert("Your production for shed A is" + " " + userInput + " litres");
+    userInputA = parseInt(prompt("Please provide amount of milk in litres"));
+    alert("Your production for shed A is" + " " + userInputA + " litres");
 };
 function promptMeB() {
-    var userInput = prompt("Please provide amount of milk in litres");
-    alert("Your production for shed B is" + " " + userInput + " litres");
+    userInputB = parseInt(prompt("Please provide amount of milk in litres"));
+    alert("Your production for shed B is" + " " + userInputB + " litres");
 };
 function promptMeC() {
-    var userInput = prompt("Please provide amount of milk in litres");
-    alert("Your production for shed C is" + " " + userInput + " litres");
+    userInputC = parseInt(prompt("Please provide amount of milk in litres"));
+    alert("Your production for shed C is" + " " + userInputC + " litres");
 };
 function promptMeD() {
-    var userInput = prompt("Please provide amount of milk in litres");
-    alert("Your production for shed D is" + " " + userInput + " litres");
+    userInputD = parseInt(prompt("Please provide amount of milk in litres"));
+    alert("Your production for shed D is" + " " + userInputD + " litres");
+};
+function promptMeTotal() {
+    var totalProduction = userInputA + userInputB + userInputC + userInputD;
+    alert("The total production is" + " " + totalProduction + " litres");
 };
 
 

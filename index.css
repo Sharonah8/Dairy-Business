@@ -4,6 +4,10 @@
     /* background-color: lightblue; */
     background-color: rgb(235, 247, 252);
 }
+.homeSec{
+    display: flex;
+    padding-top: 3vh;
+}
 
 p{
     font-size: xx-large;
@@ -61,14 +65,28 @@ h1{
     padding: 20px;
     background-color: rgb(94, 165, 181);
 }
+#shed{
+    background-color: rgb(94, 165, 181);
+}
 
 
 .theSnippets button{
-    margin-top: 2vh;
+    margin-top: 4vh;
     padding: 8px;
     border-radius: 12px;
     background-color: white;
 }
+
+#myTotalBtn{
+    width: 85%;
+    margin-top: 2vh;
+    margin-left: 8vh;
+    padding: 8px;
+    border-radius: 12px;
+    background-color: white;
+}
+
+
 /* .navbar{
     background-color: lightblue;
 }
@@ -102,6 +120,15 @@ button{
     justify-content: center;
     align-items: center;
 
+}
+.mainContSection{
+    height: 94vh;
+    width: 80%;
+    padding: 50px;
+}
+.mainConteSection h3{
+    padding-bottom: 3vh;
+    margin-left: 4vh;
 }
 
 .opacity{
@@ -202,9 +229,7 @@ button{
     height: 40px;
    }
    
-   .homeSec{
-    display: flex;
-   }
+
    
    .mainContSection{
     height: 94vh;
