@@ -29,7 +29,7 @@
   </head>
 
   <body>
-    <nav class="navbar navbar-expand-lg" style="background-color: lightblue">
+    <nav class="navbar navbar-expand-lg">
       <div class="container-fluid">
         <!-- <button
           class="navbar-toggler"
@@ -173,21 +173,33 @@
       <div class="mainConteSection">
         <h3>Dashboard</h3>
 
-        <div class="theSnippets bg-warning">
-          <h5>Total Income Today</h5>
+        <div class="theSnippets">
+          <h5 id="shed">Shed A</h5>
           <h4 id="todaysIncome">0</h4>
+          <button type="button" id="myBtnA" onclick="promptMeA()">
+            Enter Milk Amount
+          </button>
         </div>
-        <div class="theSnippets bg-success text-white">
-          <h5>Total Income this Month</h5>
+        <div class="theSnippets">
+          <h5 id="shed">Shed B</h5>
           <h4 id="">0</h4>
+          <button type="button" id="myBtn" onclick="promptMeB()">
+            Enter Milk Amount
+          </button>
         </div>
-        <div class="theSnippets bg-warning">
-          <h5>Total Expense Today</h5>
+        <div class="theSnippets">
+          <h5 id="shed">Shed C</h5>
           <h4 id="todaysExpense">0</h4>
+          <button type="button" id="myBtn" onclick="promptMeC()">
+            Enter Milk Amount
+          </button>
         </div>
-        <div class="theSnippets bg-success text-white">
-          <h5>Total Expense this Month</h5>
+        <div class="theSnippets">
+          <h5 id="shed">Shed D</h5>
           <h4 id="todaysExpense">0</h4>
+          <button type="button" id="myBtn" onclick="promptMeD()">
+            Enter Milk Amount
+          </button>
         </div>
 
         <canvas id="myChart" class="myChart"></canvas>
@@ -200,5 +212,6 @@
     <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-auth.js"></script>
     <script src="/js/config.js"></script>
     <script src="/js/dashboard.js"></script>
+    <script src="index.js"></script>
   </body>
 </html>
