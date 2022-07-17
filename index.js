@@ -15,29 +15,29 @@ var totalProduction = 0
 console.log(totalProduction);
 
 function promptMeA() {
-    userInputA = parseInt(prompt("Please provide amount of milk in litres"));
+    var userInputA = document.getElementById("fname").value;
+    console.log(userInputA)
     alert("Your production for shed A is" + " " + userInputA + " litres per day");
 };
 function promptMeB() {
-    userInputB = parseInt(prompt("Please provide amount of milk in litres"));
+    var userInputB = document.getElementById("fname1").value;
+    console.log(userInputB)
     alert("Your production for shed B is" + " " + userInputB + " litres per day");
 };
 function promptMeC() {
-    userInputC = parseInt(prompt("Please provide amount of milk in litres"));
+    var userInputC = document.getElementById("fname2").value;
+    console.log(userInputC)
     alert("Your production for shed C is" + " " + userInputC + " litres per day");
 };
 function promptMeD() {
-    userInputD = parseInt(prompt("Please provide amount of milk in litres"));
+    var userInputD = document.getElementById("fname3").value;
+    console.log(userInputD)
     alert("Your production for shed D is" + " " + userInputD + " litres per day");
 };
 function promptMeTotal() {
     totalProduction = userInputA + userInputB + userInputC + userInputD;
     alert("The total production is" + " " + totalProduction + " litres per day");
 };
-
-// function incomeOverTime() {
-//     var weeklyIncome = 
-// }
 
 
 
@@ -73,15 +73,7 @@ const months = {
 
 for (const [key, value] of Object.entries(months)) {
     display = `${key}`, `${value}`
-    console.log(`${key}`, `${value}`);
+    // console.log(`${key}`, `${value}`);
 }
 
-// function loveMatch(name1, name2) {
-//     name1 = prompt("Input your name");
-//     name2 = prompt("Input your name");
-//     var n = Math.random();
-//     n = n * 100;
-//     console.log("Your match is " + n);
-// };
-// loveMatch();
 
