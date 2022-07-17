@@ -196,36 +196,9 @@ form{
     margin-right: 20px;
    }
    
-   .userNams h6{
-    margin: 0;
-    padding: 0;
-   }
-   
-   .userNams p{
-    margin: 0;
-    padding: 0;
-   }
-   
-   
-   .userNams{
-    margin-left: 10px;
-   }
-   
-   
-   .mainNav{
-    display: flex;
-    justify-content: space-between;
-   }
-   
-   .logo{
-    height: 40px;
-   }
-   
-
-   
-   .mainContSection{
+.mainContSection{
     height: 94vh;
     width: 80%;
     padding: 50px;
-   }
+}
    

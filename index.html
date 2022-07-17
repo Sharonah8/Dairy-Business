@@ -85,7 +85,7 @@
         <h3>Dashboard</h3>
 
         <div class="theSnippets">
-          <form id="formA" action="">
+          <form id="formA" action="" onSubmit="promptMeA()">
             <h5 id="shed">Shed A</h5>
             <label for="fname">Milk Amount (ltrs):</label>
             <input type="text" id="fname" name="fname" /><br /><br />
@@ -127,7 +127,9 @@
           Weekly Income
         </button>
 
-        <canvas id="myChart" class="myChart"></canvas>
+        <button type="button" id="myTotalBtn" onclick="leapYearIncome()">
+          Monthly report for leap year
+        </button>
       </div>
     </section>
 

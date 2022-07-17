@@ -11,52 +11,38 @@ let time = 7;
 // let userInputC = 0
 // let userInputD = 0
 
-const formA = document.getElementById("formA")
-formA.addEventListener("submit", () => { promptMeA })
+// const formA = document.getElementById("formA")
+// formA.addEventListener("submit", () => { promptMeA })
+// console.log(userInputA.trim(), 'inputA')
 
-let userInputA = document.getElementById("fname").value
-let userInputB = document.getElementById("fname1").value
-let userInputC = document.getElementById("fname2").value;
-let userInputD = document.getElementById("fname3").value;
 
-console.log(userInputA.trim(), 'inputA')
-function promptMeA(event) {
-    let inputA = document.getElementById("fname").value
-    console.log(inputA, 'input')
 
+function promptMeA(e) {
+    let userInputA = document.getElementById("fname").value
+    console.log(userInputA)
     alert("Your production for shed A is" + " " + userInputA + " litres per day");
 
-
-
+    return userInputA
 };
-
-
 function promptMeB(e) {
-
-
+    let userInputB = document.getElementById("fname1").value
     console.log(userInputB)
     alert("Your production for shed B is" + " " + userInputB + " litres per day");
 
     return userInputB
-
 };
 function promptMeC(e) {
-
-
-
+    let userInputC = document.getElementById("fname2").value;
     console.log(userInputC)
     alert("Your production for shed C is" + " " + userInputC + " litres per day");
     return userInputC
 
 };
 function promptMeD(e) {
-
-
+    let userInputD = document.getElementById("fname3").value;
     console.log(userInputD)
     alert("Your production for shed D is" + " " + userInputD + " litres per day");
     return userInputD
-
-
 };
 
 function promptMeTotal(a, b) {
