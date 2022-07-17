@@ -98,26 +98,6 @@ form{
 }
 
 
-/* .navbar{
-    background-color: lightblue;
-}
-button{
-    background-color: lightblue;
-}
-.navbar-toggler-icon{
-    background-color: lightblue;
-}
-#navbarTogglerDemo01{
-    background-color: lightblue;
-}
-#navbarTogglerDemo01.img{
-    background-color: lightblue;
-} */
-
-
-.sideNav p{
-    /* background-color: lightblue; */
-}
 .sideNav ul, li{
     margin-top: 0%;
     background-color: lightblue;
@@ -249,11 +229,3 @@ button{
     padding: 50px;
    }
    
-   
-   
-   
-   
-   .myChart{
-    height: 30vh;
-   }  
-
