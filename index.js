@@ -11,6 +11,9 @@ let time = 7;
 // let userInputC = 0
 // let userInputD = 0
 
+const formA = document.getElementById("formA")
+formA.addEventListener("submit", (event) => { e.preventDefault() })
+
 let userInputA = document.getElementById("fname").value
 let userInputB = document.getElementById("fname1").value
 let userInputC = document.getElementById("fname2").value;
