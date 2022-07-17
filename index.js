@@ -3,7 +3,7 @@
 // let shedC = 486;
 // let shedD = 572;
 // let totalProduction = shedA + shedB + shedC + shedD;
-let totalProduction = 0
+let totalProduction = 1876;
 let selling_price = totalProduction * 45;
 let time = 7;
 // let userInputA = 0
@@ -60,13 +60,13 @@ function promptMeTotal(a, b) {
 
 
 
-var incomeOverTime = function () {
-    alert("Your weekly income is Ksh. " + parseInt(totalProduction * 45 * 7));
-    // console.log("Your yearly income is Ksh. " + (selling_price * (time * 52)));
-}
+// var incomeOverTime = function () {
+//     alert("Your weekly income is Ksh. " + parseInt(totalProduction * 45 * 7));
+// console.log("Your yearly income is Ksh. " + (selling_price * (time * 52)));
 // incomeOverTime(selling_price, time);
 
 //const elem = document.getElementById('outputB').innerHTML = "Your production for shed D is" + " " + promptMeB() + " litres per day"
+
 const months = {
     January: 31,
     February: 29,
@@ -81,15 +81,20 @@ const months = {
     November: 30,
     December: 31
 };
+function monthlyIncome() {
+    let title = "Your income for  ";
+    let monthlyInc
 
-// let monthyIncome = function () {
-//     console.log("Your income for " + Object.keys(months));
-// };
-// monthyIncome()
+    for (const [key, value] of Object.entries(months)) {
+        result = 45 * totalProduction * value;
+        monthlyInc = title + key + " is " + result
+        // console.log(monthlyInc);
+        
+        
+    }
+    document.getElementById("monthInc").innerHTML = monthlyInc
+}
 
-// for (let key of Object.keys(months)) {
-//     console.log("Your income for " + key + " is" + monthyIncome);
-// }
 
 for (const [key, value] of Object.entries(months)) {
     display = `${key}`, `${value}`
